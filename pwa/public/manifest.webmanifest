@@ -1,0 +1,15 @@
+{
+  "name": "LH Comics",
+  "short_name": "LH Comics",
+  "description": "NAS의 만화 압축 파일을 바로 보는 뷰어",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

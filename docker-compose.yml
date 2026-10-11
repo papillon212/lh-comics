@@ -1,0 +1,21 @@
+# 시놀로지 Container Manager / QNAP Container Station / 일반 Docker에서 그대로 쓸 수 있다.
+# 1) 아래 볼륨 경로를 NAS의 만화 폴더로 바꾼다.
+# 2) LHC_PASSWORD를 꼭 바꾼다.
+# 3) docker compose up -d 후 http://NAS주소:8080 접속 → 아이폰 Safari에서 "홈 화면에 추가"
+services:
+  lh-comics:
+    build: .
+    image: lh-comics:latest
+    container_name: lh-comics
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      LHC_PASSWORD: "change-me"
+      # 여러 폴더: "만화=/comics,웹툰=/webtoon"
+      LHC_LIBRARIES: "만화=/comics"
+      TZ: Asia/Seoul
+    volumes:
+      - ./data:/data
+      # 읽기 전용(:ro)으로 연결해 원본을 건드리지 않는다.
+      - /volume1/comics:/comics:ro

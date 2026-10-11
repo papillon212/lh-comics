@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 임시 아이콘: 펼친 책 모양. 출시 전에 디자인 아이콘으로 교체한다. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,36 L52,40 L52,74 L30,70 Z" />
+    <path
+        android:fillColor="#FFE0B2"
+        android:pathData="M56,40 L78,36 L78,70 L56,74 Z" />
+</vector>

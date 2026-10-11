@@ -1,0 +1,9 @@
+**/build/
+**/.gradle/
+**/.kotlin/
+.idea/
+android/
+pwa/node_modules/
+pwa/dist/
+local.properties
+data/

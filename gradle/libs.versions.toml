@@ -1,0 +1,80 @@
+[versions]
+agp = "8.12.0"
+kotlin = "2.3.0"
+coroutines = "1.10.2"
+serialization = "1.9.0"
+composeBom = "2025.09.00"
+activityCompose = "1.10.1"
+lifecycle = "2.9.2"
+coreKtx = "1.16.0"
+navigation = "2.9.3"
+documentfile = "1.1.0"
+coil = "3.3.0"
+ads = "24.5.0"
+ump = "3.2.0"
+billing = "8.0.0"
+ktor = "3.2.3"
+logback = "1.5.18"
+smbj = "0.14.0"
+bouncycastle = "1.81"
+junrar = "7.5.5"
+commonsCompress = "1.27.1"
+commonsNet = "3.11.1"
+xz = "1.10"
+okhttp = "4.12.0"
+twelvemonkeys = "3.12.0"
+junit = "4.13.2"
+
+[libraries]
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+smbj = { module = "com.hierynomus:smbj", version.ref = "smbj" }
+bouncycastle = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncycastle" }
+junrar = { module = "com.github.junrar:junrar", version.ref = "junrar" }
+commons-compress = { module = "org.apache.commons:commons-compress", version.ref = "commonsCompress" }
+commons-net = { module = "commons-net:commons-net", version.ref = "commonsNet" }
+xz = { module = "org.tukaani:xz", version.ref = "xz" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-material-icons = { module = "androidx.compose.material:material-icons-extended" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+documentfile = { module = "androidx.documentfile:documentfile", version.ref = "documentfile" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "ads" }
+ump = { module = "com.google.android.ump:user-messaging-platform", version.ref = "ump" }
+billing = { module = "com.android.billingclient:billing-ktx", version.ref = "billing" }
+
+ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor" }
+ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation-jvm", version.ref = "ktor" }
+ktor-server-auth = { module = "io.ktor:ktor-server-auth-jvm", version.ref = "ktor" }
+ktor-server-cors = { module = "io.ktor:ktor-server-cors-jvm", version.ref = "ktor" }
+ktor-server-status-pages = { module = "io.ktor:ktor-server-status-pages-jvm", version.ref = "ktor" }
+ktor-server-compression = { module = "io.ktor:ktor-server-compression-jvm", version.ref = "ktor" }
+ktor-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json-jvm", version.ref = "ktor" }
+ktor-server-test-host = { module = "io.ktor:ktor-server-test-host-jvm", version.ref = "ktor" }
+ktor-server-caching-headers = { module = "io.ktor:ktor-server-caching-headers-jvm", version.ref = "ktor" }
+imageio-webp = { module = "com.twelvemonkeys.imageio:imageio-webp", version.ref = "twelvemonkeys" }
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+junit = { module = "junit:junit", version.ref = "junit" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
